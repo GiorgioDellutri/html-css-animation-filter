@@ -113,8 +113,24 @@
 
 .ex-11-icon {
     font-size: 60px;
-    
 }
+
+.ex-11-icon:hover{
+    animation: rewind 2s ease-in-out;
+}
+
+@keyframes rewind {
+    0% {
+        transform: rotate(0);
+    }
+    50% {
+        transform: rotate(270deg);
+    }
+    100% {
+        transform: rotate(0);
+    }
+}
+
 
 
 .ex-12-button, .ex-13-button {
